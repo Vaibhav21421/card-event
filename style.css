@@ -11,27 +11,63 @@ height: 100%;
 #pg1{
     display: flex;
     height: 100vh;
+    /* width: 100vh; */
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #141414;
 }
 .card{
     height: 55vh;
-    background-color: #fff;
+    background-color: #E1E1E1;
+    flex-direction: column;
     display: flex;
+    width: 35vh;
     padding-top: 30px;
-    /* align-items: center; */
-    justify-content: center;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 7px;
 }
 .card #img{
     height: 17vh;
     width: 17vh;
     /* scale: 0.5; */
     /* overflow: hidden; */
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     border-radius: 50%;
+    overflow: hidden;
+
+    /* border: 2px solid black; */
+
 }
-h1{
-    
+#img>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.2s;
+}
+.card>h5{
+padding: 2vh 3vh;
+}
+.card>button{
+    /* justify-content: ; */
+
+    /* align-items: baselin; */
+    border-radius: 20px;
+    border: none;
+    padding: 3px 12px 5px 12px;
+    font-size: 15px;
+    color: #F3F3F3;
+    background-color: #1B1B1B;
+    /* margin-top: 20vh; */
+    cursor: pointer;
 }
 
+#img>img:hover #img{
+    border: none;
+}
+
+#img:hover img{
+    scale: 0.75;
+    border: 2px solid black;
+    
+}
